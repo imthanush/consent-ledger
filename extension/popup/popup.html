@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consent Ledger</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header with title and short description -->
+    <header>
+      <h1>Consent Ledger</h1>
+      <p class="description">Monitors and audits tracker activity after cookie rejection.</p>
+    </header>
+
+    <main>
+      <!-- Section 1: Latest Consent Status -->
+      <section class="card" id="consent-section">
+        <h2>Latest Consent Status</h2>
+        <div id="consent-status">
+          <p class="empty-state">No consent rejection recorded yet.</p>
+        </div>
+      </section>
+
+      <!-- Section 2: Detected Violations -->
+      <section class="card" id="violations-section">
+        <h2>Detected Violations</h2>
+        <div id="violations-list">
+          <p class="empty-state">No violations detected.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer with action button -->
+    <footer>
+      <button id="clear-btn" type="button">Clear Ledger</button>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
