@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere | Everything You Love, In One Place</title>
+  <meta name="description" content="ShopSphere is your premier modern e-commerce destination for electronics, fashion, home essentials, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span>✨ Grand Season Sale: Get up to 40% off on premium tech &amp; lifestyle essentials!</span>
+      <div class="top-bar-links">
+        <span class="demo-badge">Demo Environment for Consent Ledger</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="ShopSphere Home">
+        <span class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="m4.93 4.93 4.24 4.24"></path>
+            <path d="m14.83 9.17 4.24-4.24"></path>
+            <path d="m14.83 14.83 4.24 4.24"></path>
+            <path d="m9.17 14.83-4.24 4.24"></path>
+            <circle cx="12" cy="12" r="4"></circle>
+          </svg>
+        </span>
+        <span class="brand-name">ShopSphere</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#shop" class="nav-link">Shop</a></li>
+        <li><a href="#categories" class="nav-link">Categories</a></li>
+        <li><a href="#deals" class="nav-link">Deals</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+      </ul>
+
+      <!-- Search Bar -->
+      <div class="search-box">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search headphones, watch, mouse..." autocomplete="off">
+        <button id="clearSearchBtn" class="clear-search-btn" title="Clear search" style="display: none;">&times;</button>
+      </div>
+
+      <!-- User Actions -->
+      <div class="nav-actions">
+        <!-- User Profile Button -->
+        <button id="userProfileBtn" class="action-btn" title="Account profile" aria-label="User Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+
+        <!-- Cart Icon with dynamic counter -->
+        <button id="cartBtn" class="action-btn cart-btn" title="View Shopping Cart" aria-label="Shopping Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span id="cartCount" class="cart-count-badge">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuToggle" class="action-btn mobile-menu-btn" aria-label="Toggle menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="tag-pulse"></span>
+            <span>New Season Showcase 2026</span>
+          </div>
+          <h1 class="hero-title">Everything You Love, <span class="gradient-text">In One Place.</span></h1>
+          <p class="hero-subtitle">
+            Discover the latest products, exciting deals, and everything you need for your everyday life.
+          </p>
+          <div class="hero-actions">
+            <a href="#shop" class="btn btn-primary btn-lg">
+              <span>Shop Now</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#deals" class="btn btn-outline-hero btn-lg">Explore Deals</a>
+          </div>
+          <div class="hero-features">
+            <div class="feature-pill">
+              <span class="feature-icon">🚚</span>
+              <span>Free Fast Delivery</span>
+            </div>
+            <div class="feature-pill">
+              <span class="feature-icon">🛡️</span>
+              <span>100% Authentic</span>
+            </div>
+            <div class="feature-pill">
+              <span class="feature-icon">🔒</span>
+              <span>Privacy Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-stack">
+            <div class="hero-banner-card">
+              <div class="badge-float">🔥 Hot Pick</div>
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop&q=80" alt="Wireless Headphones" class="hero-banner-img" onerror="this.src='https://placehold.co/600x400/4f46e5/ffffff?text=Premium+Headphones'">
+              <div class="hero-card-meta">
+                <div>
+                  <div class="hero-card-brand">ShopSphere Acoustic</div>
+                  <div class="hero-card-title">Wireless Headphones Pro</div>
+                </div>
+                <div class="hero-card-price">₹2,999</div>
+              </div>
+            </div>
+            <div class="hero-floating-stat stat-1">
+              <span class="stat-icon">⭐</span>
+              <div>
+                <span class="stat-number">4.9 / 5</span>
+                <span class="stat-label">Judge-Approved Quality</span>
+              </div>
+            </div>
+            <div class="hero-floating-stat stat-2">
+              <span class="stat-icon">🛍️</span>
+              <div>
+                <span class="stat-number">25,000+</span>
+                <span class="stat-label">Happy Shoppers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Browse Department</span>
+          <h2 class="section-title">Shop by Category</h2>
+          <p class="section-desc">Find exactly what you need curated across our top trending departments.</p>
+        </div>
+
+        <div class="categories-grid">
+          <!-- 1. Electronics -->
+          <div class="category-card" data-category="Electronics" tabindex="0" role="button">
+            <div class="category-icon-wrapper cat-electronics">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="category-name">Electronics</h3>
+            <span class="category-count">4 Products</span>
+            <span class="category-arrow">→</span>
+          </div>
+
+          <!-- 2. Fashion -->
+          <div class="category-card" data-category="Fashion" tabindex="0" role="button">
+            <div class="category-icon-wrapper cat-fashion">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <h3 class="category-name">Fashion</h3>
+            <span class="category-count">2 Products</span>
+            <span class="category-arrow">→</span>
+          </div>
+
+          <!-- 3. Home & Living -->
+          <div class="category-card" data-category="Home & Living" tabindex="0" role="button">
+            <div class="category-icon-wrapper cat-home">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3 class="category-name">Home &amp; Living</h3>
+            <span class="category-count">1 Product</span>
+            <span class="category-arrow">→</span>
+          </div>
+
+          <!-- 4. Beauty -->
+          <div class="category-card" data-category="Beauty" tabindex="0" role="button">
+            <div class="category-icon-wrapper cat-beauty">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="category-name">Beauty</h3>
+            <span class="category-count">Trending Now</span>
+            <span class="category-arrow">→</span>
+          </div>
+
+          <!-- 5. Sports -->
+          <div class="category-card" data-category="Sports" tabindex="0" role="button">
+            <div class="category-icon-wrapper cat-sports">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m4.93 4.93 4.24 4.24"></path>
+                <path d="m14.83 9.17 4.24-4.24"></path>
+                <path d="m14.83 14.83 4.24 4.24"></path>
+                <path d="m9.17 14.83-4.24 4.24"></path>
+              </svg>
+            </div>
+            <h3 class="category-name">Sports</h3>
+            <span class="category-count">1 Product</span>
+            <span class="category-arrow">→</span>
+          </div>
+
+          <!-- 6. Accessories -->
+          <div class="category-card" data-category="Accessories" tabindex="0" role="button">
+            <div class="category-icon-wrapper cat-accessories">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="7"></circle>
+                <polyline points="12 9 12 12 13.5 13.5"></polyline>
+                <path d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83"></path>
+              </svg>
+            </div>
+            <h3 class="category-name">Accessories</h3>
+            <span class="category-count">2 Products</span>
+            <span class="category-arrow">→</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="shop" class="products-section">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <span class="section-label">Handpicked Collection</span>
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-desc">Engineered for comfort, performance, and everyday style.</p>
+          </div>
+          <!-- Category Filter Pills -->
+          <div class="category-filters">
+            <button class="filter-pill active" data-filter="all">All</button>
+            <button class="filter-pill" data-filter="Electronics">Electronics</button>
+            <button class="filter-pill" data-filter="Sports">Sports</button>
+            <button class="filter-pill" data-filter="Accessories">Accessories</button>
+            <button class="filter-pill" data-filter="Home & Living">Home &amp; Living</button>
+          </div>
+        </div>
+
+        <!-- Search Status Bar -->
+        <div id="searchStatusBar" class="search-status-bar" style="display: none;">
+          <span>Showing results for "<strong id="searchQueryDisplay"></strong>"</span>
+          <button id="resetSearchFilterBtn" class="link-btn">Reset All</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div id="productsGrid" class="products-grid">
+          <!-- Dynamic product cards rendered by script.js -->
+        </div>
+
+        <!-- Empty state message for no search results -->
+        <div id="noProductsFound" class="no-products-state" style="display: none;">
+          <div class="empty-icon">🔍</div>
+          <h3>No matching products found</h3>
+          <p>We couldn't find any products matching your search term. Try checking for spelling or reset filters.</p>
+          <button id="clearSearchStateBtn" class="btn btn-primary">View All Products</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deals & Offers Section -->
+    <section id="deals" class="deals-section">
+      <div class="container">
+        <div class="deals-banner">
+          <div class="deals-info">
+            <span class="deal-pill">⚡ Limited Time Hackathon Offer</span>
+            <h2 class="deal-title">Flash Tech Deal of the Week</h2>
+            <p class="deal-subtitle">Get an additional 20% instant discount when you bundle any smartwatch or headphones with our exclusive audio kit.</p>
+            <div class="countdown-timer">
+              <div class="timer-box">
+                <span class="timer-number">12</span>
+                <span class="timer-label">Hours</span>
+              </div>
+              <span class="timer-colon">:</span>
+              <div class="timer-box">
+                <span class="timer-number">45</span>
+                <span class="timer-label">Mins</span>
+              </div>
+              <span class="timer-colon">:</span>
+              <div class="timer-box">
+                <span class="timer-number">28</span>
+                <span class="timer-label">Secs</span>
+              </div>
+            </div>
+            <a href="#shop" class="btn btn-light btn-lg">Claim Offer Now</a>
+          </div>
+          <div class="deals-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop&q=80" alt="Smart Watch Deal" class="deal-product-img" onerror="this.src='https://placehold.co/400x300/312e81/ffffff?text=Smart+Watch+Deal'">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-label">Our Story</span>
+            <h2 class="section-title">Built with Passion. Driven by Integrity.</h2>
+            <p>
+              At <strong>ShopSphere</strong>, we believe modern commerce should be seamless, enjoyable, and above all, transparent. Founded with a mission to bring high-quality products directly to conscious consumers, we place user satisfaction and privacy at the center of everything we build.
+            </p>
+            <p>
+              This website also serves as the official live testbench for <strong>Consent Ledger</strong>, showcasing how state-of-the-art privacy verification guarantees user choice across modern web applications.
+            </p>
+            <div class="about-stats">
+              <div class="about-stat-item">
+                <div class="about-stat-num">99.8%</div>
+                <div class="about-stat-text">On-Time Fulfillment</div>
+              </div>
+              <div class="about-stat-item">
+                <div class="about-stat-num">100%</div>
+                <div class="about-stat-text">Transparency</div>
+              </div>
+              <div class="about-stat-item">
+                <div class="about-stat-num">24/7</div>
+                <div class="about-stat-text">Customer Care</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image-card">
+            <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&auto=format&fit=crop&q=80" alt="ShopSphere Headquarters" class="about-img" onerror="this.src='https://placehold.co/600x400/1e1b4b/ffffff?text=ShopSphere+Store'">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Professional Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <!-- Col 1: Brand -->
+      <div class="footer-col brand-col">
+        <a href="#home" class="brand-logo footer-logo">
+          <span class="logo-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="4"></circle>
+            </svg>
+          </span>
+          <span class="brand-name">ShopSphere</span>
+        </a>
+        <p class="footer-tagline">"Everything You Love, In One Place."</p>
+        <p class="footer-desc">Premium e-commerce curated for quality, speed, and privacy.</p>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Customer Support -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Customer Support</h4>
+        <ul class="footer-links">
+          <li><a href="#about" id="helpCenterLink">Help Center</a></li>
+          <li><a href="#about" id="contactLink">Contact</a></li>
+          <li><a href="#about" id="returnsLink">Returns</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Privacy & Settings -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Privacy</h4>
+        <ul class="footer-links">
+          <li><a href="#about" id="privacyPolicyLink">Privacy Policy</a></li>
+          <li><button id="footerCookieSettingsBtn" class="footer-link-btn">Cookie Settings</button></li>
+          <li><button id="footerResetConsentBtn" class="footer-link-btn reset-consent-btn" title="Clear stored consent for demonstration testing">Reset Consent (Demo)</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2026 ShopSphere. All rights reserved.</p>
+        <p class="demo-notice">Demo Environment for Consent Ledger</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shopping Cart Drawer -->
+  <div id="cartOverlay" class="cart-overlay"></div>
+  <aside id="cartDrawer" class="cart-drawer" aria-labelledby="cartDrawerTitle" role="dialog" aria-modal="true">
+    <div class="cart-header">
+      <div class="cart-header-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <h3 id="cartDrawerTitle">Your Shopping Cart</h3>
+        <span id="cartDrawerCount" class="cart-pill">0</span>
+      </div>
+      <button id="closeCartBtn" class="close-btn" aria-label="Close cart">&times;</button>
+    </div>
+
+    <!-- Cart Items List Container -->
+    <div id="cartItemsContainer" class="cart-items-body">
+      <!-- Items dynamically populated by script.js -->
+    </div>
+
+    <!-- Cart Summary Footer -->
+    <div class="cart-footer">
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cartSubtotal" class="amount">₹0</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Shipping</span>
+        <span class="free-shipping">FREE</span>
+      </div>
+      <div class="cart-summary-line cart-total-line">
+        <span>Total Price</span>
+        <span id="totalPrice" class="total-amount">₹0</span>
+      </div>
+      <button id="checkoutBtn" class="btn btn-primary btn-block">
+        <span>Proceed to Checkout</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+      <button id="clearCartBtn" class="btn btn-link btn-sm btn-clear-cart">Clear Cart</button>
+    </div>
+  </aside>
+
+  <!-- ============================================== -->
+  <!-- COOKIE CONSENT BANNER                          -->
+  <!-- ============================================== -->
+  <aside id="cookieBanner" class="cookie-banner" role="region" aria-label="Privacy Cookie Consent">
+    <div class="cookie-banner-inner container">
+      <div class="cookie-banner-info">
+        <div class="cookie-banner-header">
+          <div class="cookie-icon-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3>Your Privacy Matters</h3>
+        </div>
+        <p class="cookie-banner-text">
+          We use cookies and similar technologies to improve your shopping experience and understand how our website is used.
+        </p>
+      </div>
+
+      <!-- Action Buttons conforming strictly to Consent Ledger requirements -->
+      <div class="cookie-banner-actions">
+        <button id="acceptAll" class="btn btn-primary">Accept All</button>
+        <button id="rejectAll" data-consent-action="reject" class="btn btn-outline-danger">Reject All</button>
+        <button id="managePreferences" class="btn btn-secondary">Manage Preferences</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============================================== -->
+  <!-- MANAGE PREFERENCES MODAL                       -->
+  <!-- ============================================== -->
+  <div id="preferencesModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="prefModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="cookie-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 id="prefModalTitle">Manage Cookie Preferences</h3>
+        </div>
+        <button id="closePrefModalBtn" class="close-btn" aria-label="Close preferences modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-intro">
+          Customize your privacy options below. You can decide which categories of cookies to allow on ShopSphere.
+        </p>
+
+        <!-- Necessary Cookies -->
+        <div class="preference-item">
+          <div class="preference-text">
+            <div class="preference-name">
+              <strong>Necessary Cookies</strong>
+              <span class="badge-always-active">Always Active</span>
+            </div>
+            <p class="preference-desc">
+              Essential for the website to function properly, enabling basic functions like navigation, cart storage, and security.
+            </p>
+          </div>
+          <div class="preference-control">
+            <input type="checkbox" id="prefNecessary" checked disabled aria-label="Necessary Cookies (Always Active)">
+            <label for="prefNecessary" class="switch-disabled"></label>
+          </div>
+        </div>
+
+        <!-- Analytics Cookies -->
+        <div class="preference-item">
+          <div class="preference-text">
+            <div class="preference-name">
+              <strong>Analytics Cookies</strong>
+            </div>
+            <p class="preference-desc">
+              Help us measure audience engagement, popular product trends, and website performance to improve user experience.
+            </p>
+          </div>
+          <div class="preference-control">
+            <label class="toggle-switch">
+              <input type="checkbox" id="prefAnalytics">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Marketing Cookies -->
+        <div class="preference-item">
+          <div class="preference-text">
+            <div class="preference-name">
+              <strong>Marketing Cookies</strong>
+            </div>
+            <p class="preference-desc">
+              Used to deliver personalized offers, promotional deals, and relevant advertising across third-party channels.
+            </p>
+          </div>
+          <div class="preference-control">
+            <label class="toggle-switch">
+              <input type="checkbox" id="prefMarketing">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="savePreferencesBtn" class="btn btn-primary">Save Preferences</button>
+        <button id="cancelPreferencesBtn" class="btn btn-secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-icon" id="toastIcon">✓</div>
+    <div class="toast-message" id="toastMessage">Notification message</div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
